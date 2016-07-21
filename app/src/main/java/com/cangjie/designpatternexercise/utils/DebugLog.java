@@ -8,7 +8,7 @@
  * For more information, please refer to <http://unlicense.org/>
  */
 
-package com.cangjie.designpatternexercise;
+package com.cangjie.designpatternexercise.utils;
 
 import android.util.Log;
 

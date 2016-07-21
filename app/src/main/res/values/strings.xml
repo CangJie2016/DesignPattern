@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DesignPatternExercise</string>
+    <string name="config_factory">com.cangjie.designpatternexercise.create.BarChartFactory</string>
 </resources>
