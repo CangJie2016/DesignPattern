@@ -1,4 +1,4 @@
-package com.cangjie.designpatternexercise.create;
+package com.cangjie.designpatternexercise.simplefactory;
 
 import android.graphics.Bitmap;
 

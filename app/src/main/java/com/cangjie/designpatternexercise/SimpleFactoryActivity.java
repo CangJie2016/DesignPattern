@@ -1,11 +1,11 @@
-package com.cangjie.designpatternexercise.create;
+package com.cangjie.designpatternexercise;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
 import android.widget.ImageView;
 
-import com.cangjie.designpatternexercise.R;
+import com.cangjie.designpatternexercise.simplefactory.ReaderFactory;
 import com.cangjie.designpatternexercise.utils.XMLUtil;
 
 public class SimpleFactoryActivity extends Activity {

@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">DesignPatternExercise</string>
-    <string name="config_factory">com.cangjie.designpatternexercise.create.JPGReaderFactory</string>
+    <string name="config_factory">com.cangjie.designpatternexercise.abstractfactory.WindowsPlatform</string>
 </resources>

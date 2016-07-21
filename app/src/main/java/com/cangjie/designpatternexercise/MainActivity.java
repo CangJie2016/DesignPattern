@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.cangjie.designpatternexercise.create.SimpleFactoryActivity;
-
 public class MainActivity extends Activity {
 
     @Override
@@ -17,5 +15,8 @@ public class MainActivity extends Activity {
 
     public void simpleFactoryPattern(View view){
         startActivity(new Intent(this, SimpleFactoryActivity.class));
+    }
+    public void AbstractFactoryPattern(View view){
+        startActivity(new Intent(this, AbstractFactoryActivity.class));
     }
 }
