@@ -4,7 +4,7 @@ package com.cangjie.designpatternexercise.builder;
  * author：CangJie on 2016/7/22 17:47
  * email：cangjie2016@gmail.com
  */
-public class EvilBuilder implements ActorBuilder {
+public class EvilBuilder extends ActorBuilder {
     @Override
     public void buildType() {
         actor.setType("Evil");
@@ -30,8 +30,4 @@ public class EvilBuilder implements ActorBuilder {
         actor.setHairstyle("Evil hair");
     }
 
-    @Override
-    public Actor builder() {
-        return actor;
-    }
 }
