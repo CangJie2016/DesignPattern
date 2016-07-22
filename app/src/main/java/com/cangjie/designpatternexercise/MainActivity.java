@@ -19,4 +19,7 @@ public class MainActivity extends Activity {
     public void AbstractFactoryPattern(View view){
         startActivity(new Intent(this, AbstractFactoryActivity.class));
     }
+    public void Singleton(View view){
+        startActivity(new Intent(this, SingletonActivity.class));
+    }
 }

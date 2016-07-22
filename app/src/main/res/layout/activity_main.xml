@@ -26,6 +26,11 @@
                 android:layout_height="wrap_content"
                 android:text="AbstractFactoryPattern"
                 android:onClick="AbstractFactoryPattern"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Singleton"
+                android:onClick="Singleton"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
