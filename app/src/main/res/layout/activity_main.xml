@@ -36,6 +36,11 @@
                 android:layout_height="wrap_content"
                 android:text="Prototype"
                 android:onClick="Prototype"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Builder"
+                android:onClick="Builder"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

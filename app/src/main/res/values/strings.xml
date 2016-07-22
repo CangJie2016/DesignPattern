@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DesignPatternExercise</string>
     <string name="config_factory">com.cangjie.designpatternexercise.abstractfactory.WindowsPlatform</string>
+    <string name="config_builder">com.cangjie.designpatternexercise.builder.HeroBuilder</string>
 </resources>

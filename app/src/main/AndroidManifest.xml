@@ -20,7 +20,8 @@
         <activity android:name=".SimpleFactoryActivity" />
         <activity android:name=".AbstractFactoryActivity" />
         <activity android:name=".SingletonActivity" />
-        <activity android:name=".PrototypeActivity"/>
+        <activity android:name=".PrototypeActivity" />
+        <activity android:name=".BuilderActivity"></activity>
     </application>
 
 </manifest>

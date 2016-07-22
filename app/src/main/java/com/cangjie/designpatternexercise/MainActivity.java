@@ -26,5 +26,8 @@ public class MainActivity extends Activity {
     public void Prototype(View view){
         startActivity(new Intent(this, PrototypeActivity.class));
     }
+    public void Builder(View view){
+        startActivity(new Intent(this, BuilderActivity.class));
+    }
 
 }
