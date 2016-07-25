@@ -21,7 +21,8 @@
         <activity android:name=".AbstractFactoryActivity" />
         <activity android:name=".SingletonActivity" />
         <activity android:name=".PrototypeActivity" />
-        <activity android:name=".BuilderActivity"></activity>
+        <activity android:name=".BuilderActivity" />
+        <activity android:name=".AdapterActivity"></activity>
     </application>
 
 </manifest>
