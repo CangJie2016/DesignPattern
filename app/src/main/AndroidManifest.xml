@@ -22,7 +22,8 @@
         <activity android:name=".SingletonActivity" />
         <activity android:name=".PrototypeActivity" />
         <activity android:name=".BuilderActivity" />
-        <activity android:name=".AdapterActivity"></activity>
+        <activity android:name=".AdapterActivity" />
+        <activity android:name=".BridgeActivity"></activity>
     </application>
 
 </manifest>
