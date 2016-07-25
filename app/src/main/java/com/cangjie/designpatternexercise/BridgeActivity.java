@@ -1,12 +1,12 @@
 package com.cangjie.designpatternexercise;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.cangjie.designpatternexercise.bridge.DataChange;
-import com.cangjie.designpatternexercise.bridge.DataChangePdf;
+import com.cangjie.designpatternexercise.bridge.DataChangeWps;
 import com.cangjie.designpatternexercise.bridge.DataFrom;
-import com.cangjie.designpatternexercise.bridge.DataFromOrcal;
+import com.cangjie.designpatternexercise.bridge.DataFromExcel;
 
 public class BridgeActivity extends AppCompatActivity {
 
@@ -14,8 +14,8 @@ public class BridgeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bridge);
-        DataChange changer = new DataChangePdf();
-        DataFrom dataFrom = new DataFromOrcal();
+        DataChange changer = new DataChangeWps();
+        DataFrom dataFrom = new DataFromExcel();
         changer.setData(dataFrom);
         changer.change();
     }
