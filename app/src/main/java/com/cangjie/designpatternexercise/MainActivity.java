@@ -35,5 +35,8 @@ public class MainActivity extends Activity {
     public void Composite(View view){
         startActivity(new Intent(this, CompositeActivity.class));
     }
+    public void Decorator(View view){
+        startActivity(new Intent(this, DecoratorActivity.class));
+    }
 
 }
