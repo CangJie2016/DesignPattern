@@ -38,5 +38,8 @@ public class MainActivity extends Activity {
     public void Decorator(View view){
         startActivity(new Intent(this, DecoratorActivity.class));
     }
+    public void Facade(View view){
+        startActivity(new Intent(this, FacadeActivity.class));
+    }
 
 }

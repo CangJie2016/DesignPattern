@@ -56,6 +56,11 @@
                 android:layout_height="wrap_content"
                 android:text="Decorator"
                 android:onClick="Decorator"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facade"
+                android:onClick="Facade"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

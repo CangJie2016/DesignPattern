@@ -3,6 +3,7 @@
     package="com.cangjie.designpatternexercise">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,8 @@
         <activity android:name=".BuilderActivity" />
         <activity android:name=".AdapterActivity" />
         <activity android:name=".CompositeActivity" />
-        <activity android:name=".DecoratorActivity"></activity>
+        <activity android:name=".DecoratorActivity" />
+        <activity android:name=".FacadeActivity"></activity>
     </application>
 
 </manifest>
