@@ -8,7 +8,7 @@ import com.cangjie.designpatternexercise.utils.DebugLog;
  */
 public abstract class IgoChessman {
     public abstract String getColor();
-    public void display(){
-        DebugLog.w("棋子的颜色:"+this.getColor());
+    public void display(Coordinates coordinates){
+        DebugLog.w("棋子的颜色:"+this.getColor()+", x = "+coordinates.getX()+" , y = "+coordinates.getY());
     }
 }

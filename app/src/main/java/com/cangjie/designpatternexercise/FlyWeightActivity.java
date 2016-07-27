@@ -3,6 +3,7 @@ package com.cangjie.designpatternexercise;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.cangjie.designpatternexercise.flyweight.Coordinates;
 import com.cangjie.designpatternexercise.flyweight.IgoChessman;
 import com.cangjie.designpatternexercise.flyweight.IgoChessmanFactory;
 import com.cangjie.designpatternexercise.utils.DebugLog;
@@ -25,10 +26,10 @@ public class FlyWeightActivity extends AppCompatActivity {
         DebugLog.w("igo2 == igo3"+ (igo3== igo2));
         DebugLog.w("igo4 == igo3"+ (igo3== igo4));
 
-        igo1.display();
-        igo2.display();
-        igo3.display();
-        igo4.display();
-        igo5.display();
+        igo1.display(new Coordinates(1,3));
+        igo2.display(new Coordinates(2,3));
+        igo3.display(new Coordinates(1,4));
+        igo4.display(new Coordinates(1,1));
+        igo5.display(new Coordinates(1,2));
     }
 }
