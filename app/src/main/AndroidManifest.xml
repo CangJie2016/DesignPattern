@@ -26,7 +26,8 @@
         <activity android:name=".AdapterActivity" />
         <activity android:name=".CompositeActivity" />
         <activity android:name=".DecoratorActivity" />
-        <activity android:name=".FacadeActivity"></activity>
+        <activity android:name=".FacadeActivity" />
+        <activity android:name=".FlyWeightActivity"></activity>
     </application>
 
 </manifest>

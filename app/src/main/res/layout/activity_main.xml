@@ -61,6 +61,11 @@
                 android:layout_height="wrap_content"
                 android:text="Facade"
                 android:onClick="Facade"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FlyWeight"
+                android:onClick="FlyWeight"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

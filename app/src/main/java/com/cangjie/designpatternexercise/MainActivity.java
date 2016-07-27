@@ -41,5 +41,8 @@ public class MainActivity extends Activity {
     public void Facade(View view){
         startActivity(new Intent(this, FacadeActivity.class));
     }
+    public void FlyWeight(View view){
+        startActivity(new Intent(this, FlyWeightActivity.class));
+    }
 
 }
