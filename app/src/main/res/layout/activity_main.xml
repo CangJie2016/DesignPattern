@@ -66,6 +66,11 @@
                 android:layout_height="wrap_content"
                 android:text="FlyWeight"
                 android:onClick="FlyWeight"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proxy"
+                android:onClick="Proxy"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

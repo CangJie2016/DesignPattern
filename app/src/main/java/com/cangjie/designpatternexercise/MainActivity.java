@@ -44,5 +44,8 @@ public class MainActivity extends Activity {
     public void FlyWeight(View view){
         startActivity(new Intent(this, FlyWeightActivity.class));
     }
+    public void Proxy(View view){
+        startActivity(new Intent(this, ProxyActivity.class));
+    }
 
 }

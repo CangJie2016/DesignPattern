@@ -27,7 +27,8 @@
         <activity android:name=".CompositeActivity" />
         <activity android:name=".DecoratorActivity" />
         <activity android:name=".FacadeActivity" />
-        <activity android:name=".FlyWeightActivity"></activity>
+        <activity android:name=".FlyWeightActivity" />
+        <activity android:name=".ProxyActivity"></activity>
     </application>
 
 </manifest>
