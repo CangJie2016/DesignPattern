@@ -5,7 +5,7 @@ package com.cangjie.designpatternexercise.command;
  * email：cangjie2016@gmail.com
  */
 public class FunctionButton {
-    private Command command;
+    private CommandQueue queue;
     private String name;
 
     public FunctionButton(String name) {
@@ -20,11 +20,12 @@ public class FunctionButton {
         this.name = name;
     }
 
-    public void setCommand(Command command) {
-        this.command = command;
+    public void setQueue(CommandQueue queue) {
+        this.queue = queue;
     }
+
     public void onClick(){
-        command.execute();
+        queue.call();
     }
 
 }

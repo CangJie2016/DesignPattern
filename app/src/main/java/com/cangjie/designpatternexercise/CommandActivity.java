@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.cangjie.designpatternexercise.command.Command;
+import com.cangjie.designpatternexercise.command.CommandQueue;
 import com.cangjie.designpatternexercise.command.FBSettingWindow;
 import com.cangjie.designpatternexercise.command.FunctionButton;
 import com.cangjie.designpatternexercise.command.HelpCommand;
@@ -22,15 +23,20 @@ public class CommandActivity extends AppCompatActivity {
         Command helpCommand = new HelpCommand();
         Command minimizeCommand = new MinimizeCommand();
 
-        fb1.setCommand(minimizeCommand);
-        fb2.setCommand(helpCommand);
+        CommandQueue queue = new CommandQueue();
+        queue.addCommand(helpCommand);
+        queue.addCommand(minimizeCommand);
+
+        fb1.setQueue(queue);
+
+//        fb2.setCommands(helpCommand);
 
 
         window.addFunctionButton(fb1);
-        window.addFunctionButton(fb2);
+//        window.addFunctionButton(fb2);
 
         window.display();
         fb1.onClick();
-        fb2.onClick();
+//        fb2.onClick();
     }
 }
