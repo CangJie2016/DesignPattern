@@ -30,7 +30,8 @@
         <activity android:name=".FacadeActivity" />
         <activity android:name=".FlyWeightActivity" />
         <activity android:name=".ProxyActivity" />
-        <activity android:name=".ChainOfResponsibilityActivity"></activity>
+        <activity android:name=".ChainOfResponsibilityActivity" />
+        <activity android:name=".CommandActivity"></activity>
     </application>
 
 </manifest>

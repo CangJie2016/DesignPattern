@@ -50,5 +50,8 @@ public class MainActivity extends Activity {
     public void ChainOfResponsibility(View view){
         startActivity(new Intent(this, ChainOfResponsibilityActivity.class));
     }
+    public void Command(View view){
+        startActivity(new Intent(this, CommandActivity.class));
+    }
 
 }
