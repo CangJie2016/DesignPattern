@@ -1,42 +1,43 @@
 package com.cangjie.designpatternexercise;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.EditText;
 
+import com.cangjie.designpatternexercise.command.AddCommand;
+import com.cangjie.designpatternexercise.command.CalculatorForm;
 import com.cangjie.designpatternexercise.command.Command;
-import com.cangjie.designpatternexercise.command.CommandQueue;
-import com.cangjie.designpatternexercise.command.FBSettingWindow;
-import com.cangjie.designpatternexercise.command.FunctionButton;
-import com.cangjie.designpatternexercise.command.HelpCommand;
-import com.cangjie.designpatternexercise.command.MinimizeCommand;
 
 public class CommandActivity extends AppCompatActivity {
+
+    private CalculatorForm form;
+    private EditText et;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_command);
-        FBSettingWindow window = new FBSettingWindow("super man");
-        FunctionButton fb1 = new FunctionButton("minimize btn");
-        FunctionButton fb2 = new FunctionButton("help btn");
+        et = (EditText) findViewById(R.id.et);
 
-        Command helpCommand = new HelpCommand();
-        Command minimizeCommand = new MinimizeCommand();
+        form = new CalculatorForm();
+        Command command = new AddCommand();
+        form.setCommand(command);
 
-        CommandQueue queue = new CommandQueue();
-        queue.addCommand(helpCommand);
-        queue.addCommand(minimizeCommand);
-
-        fb1.setQueue(queue);
-
-//        fb2.setCommands(helpCommand);
-
-
-        window.addFunctionButton(fb1);
-//        window.addFunctionButton(fb2);
-
-        window.display();
-        fb1.onClick();
-//        fb2.onClick();
+        form.compute(10);
+        form.compute(5);
+        form.compute(10);
+        form.compute(5);
+        form.compute(10);
+        form.compute(5);
+    }
+    public void undo(View view){
+        form.undo();
+    }
+    public void redo(View view){
+        form.redo();
+    }
+    public void add(View view){
+        form.compute(Integer.parseInt(et.getText().toString().trim()));
     }
 }

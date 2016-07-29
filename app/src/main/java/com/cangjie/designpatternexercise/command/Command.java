@@ -5,5 +5,7 @@ package com.cangjie.designpatternexercise.command;
  * email：cangjie2016@gmail.com
  */
 public abstract class Command {
-    public abstract void execute();
+    public abstract void execute(int value);
+    public abstract void undo();
+    public abstract void redo();
 }
