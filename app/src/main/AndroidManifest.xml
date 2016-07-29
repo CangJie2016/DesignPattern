@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +29,8 @@
         <activity android:name=".DecoratorActivity" />
         <activity android:name=".FacadeActivity" />
         <activity android:name=".FlyWeightActivity" />
-        <activity android:name=".ProxyActivity"></activity>
+        <activity android:name=".ProxyActivity" />
+        <activity android:name=".ChainOfResponsibilityActivity"></activity>
     </application>
 
 </manifest>

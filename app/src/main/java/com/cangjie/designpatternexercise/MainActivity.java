@@ -47,5 +47,8 @@ public class MainActivity extends Activity {
     public void Proxy(View view){
         startActivity(new Intent(this, ProxyActivity.class));
     }
+    public void ChainOfResponsibility(View view){
+        startActivity(new Intent(this, ChainOfResponsibilityActivity.class));
+    }
 
 }
