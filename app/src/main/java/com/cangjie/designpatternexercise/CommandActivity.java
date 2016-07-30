@@ -2,42 +2,45 @@ package com.cangjie.designpatternexercise;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.EditText;
 
-import com.cangjie.designpatternexercise.command.AddCommand;
-import com.cangjie.designpatternexercise.command.CalculatorForm;
 import com.cangjie.designpatternexercise.command.Command;
+import com.cangjie.designpatternexercise.command.ConfigOperator;
+import com.cangjie.designpatternexercise.command.ConfigSettingWindow;
+import com.cangjie.designpatternexercise.command.InsertCommand;
+import com.cangjie.designpatternexercise.command.ModifyCommand;
+import com.cangjie.designpatternexercise.utils.DebugLog;
 
 public class CommandActivity extends AppCompatActivity {
-
-    private CalculatorForm form;
-    private EditText et;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_command);
-        et = (EditText) findViewById(R.id.et);
+        ConfigSettingWindow window = new ConfigSettingWindow();
+        Command command;
+        ConfigOperator co = new ConfigOperator();
 
-        form = new CalculatorForm();
-        Command command = new AddCommand();
-        form.setCommand(command);
+        command = new InsertCommand("insert");
+        command.setConfigOperator(co);
+        window.setCommand(command);
+        window.call("网站首页");
 
-        form.compute(10);
-        form.compute(5);
-        form.compute(10);
-        form.compute(5);
-        form.compute(10);
-        form.compute(5);
-    }
-    public void undo(View view){
-        form.undo();
-    }
-    public void redo(View view){
-        form.redo();
-    }
-    public void add(View view){
-        form.compute(Integer.parseInt(et.getText().toString().trim()));
+        command = new InsertCommand("insert");
+        command.setConfigOperator(co);
+        window.setCommand(command);
+        window.call("端口号");
+
+        command = new ModifyCommand("modify");
+        command.setConfigOperator(co);
+        window.setCommand(command);
+        window.call("登录系统");
+
+        DebugLog.w("-------------save-----------");
+        window.save();
+        DebugLog.w("-------------save-----------");
+
+        DebugLog.w("-------------recover-----------");
+        window.recover();
+        DebugLog.w("-------------recover-----------");
     }
 }
