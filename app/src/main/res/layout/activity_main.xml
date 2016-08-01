@@ -81,6 +81,11 @@
                 android:layout_height="wrap_content"
                 android:text="Command"
                 android:onClick="Command"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interpreter"
+                android:onClick="Interpreter"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

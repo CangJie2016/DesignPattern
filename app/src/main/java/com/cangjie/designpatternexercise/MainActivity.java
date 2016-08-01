@@ -53,5 +53,8 @@ public class MainActivity extends Activity {
     public void Command(View view){
         startActivity(new Intent(this, CommandActivity.class));
     }
+    public void Interpreter(View view){
+        startActivity(new Intent(this, InterpreterActivity.class));
+    }
 
 }
