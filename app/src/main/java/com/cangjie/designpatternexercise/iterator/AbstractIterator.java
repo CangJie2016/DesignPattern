@@ -8,10 +8,10 @@ import java.util.List;
  */
 public abstract class AbstractIterator {
     protected int cursor1,cursor2;
-    private ProductsList list;
+    private AbstractList list;
     protected List<Object> objs;
 
-    public AbstractIterator(ProductsList list) {
+    public AbstractIterator(AbstractList list) {
         this.list = list;
         this.objs = list.getObjects();
         cursor1 = 0;
@@ -23,5 +23,6 @@ public abstract class AbstractIterator {
     public abstract boolean isFirst();
     public abstract Object getNextItem();
     public abstract Object getPreviousItem();
+    public abstract void print();
 
 }
