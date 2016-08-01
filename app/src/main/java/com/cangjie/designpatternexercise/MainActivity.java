@@ -56,5 +56,8 @@ public class MainActivity extends Activity {
     public void Interpreter(View view){
         startActivity(new Intent(this, InterpreterActivity.class));
     }
+    public void Iterator(View view){
+        startActivity(new Intent(this, IteratorActivity.class));
+    }
 
 }
