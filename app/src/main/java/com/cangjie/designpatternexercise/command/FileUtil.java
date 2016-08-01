@@ -2,8 +2,6 @@ package com.cangjie.designpatternexercise.command;
 
 import android.os.Environment;
 
-import com.cangjie.designpatternexercise.utils.DebugLog;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
