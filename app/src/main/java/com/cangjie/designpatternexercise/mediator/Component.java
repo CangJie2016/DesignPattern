@@ -10,8 +10,11 @@ public abstract class Component {
         this.mediator = mediator;
     }
 
-    public void method1(){
-        mediator.operator(this);
+    public void operator(){
+        operator(null);
     }
-    public abstract void method2();
+    public void operator(String info){
+        mediator.operator(this,info);
+    }
+    public abstract void fun(String info);
 }
