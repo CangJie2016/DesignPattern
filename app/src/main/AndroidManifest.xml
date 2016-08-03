@@ -34,7 +34,8 @@
         <activity android:name=".CommandActivity" />
         <activity android:name=".InterpreterActivity" />
         <activity android:name=".IteratorActivity" />
-        <activity android:name=".MementoActivity"></activity>
+        <activity android:name=".MementoActivity" />
+        <activity android:name=".ObserverActivity"></activity>
     </application>
 
 </manifest>

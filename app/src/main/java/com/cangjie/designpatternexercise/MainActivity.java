@@ -62,5 +62,8 @@ public class MainActivity extends Activity {
     public void Memento(View view){
         startActivity(new Intent(this, MementoActivity.class));
     }
+    public void Observer(View view){
+        startActivity(new Intent(this, ObserverActivity.class));
+    }
 
 }
