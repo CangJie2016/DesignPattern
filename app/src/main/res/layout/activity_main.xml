@@ -94,6 +94,11 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Mediator"
+                android:onClick="Mediator"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Memento"
                 android:onClick="Memento"/>
             <Button

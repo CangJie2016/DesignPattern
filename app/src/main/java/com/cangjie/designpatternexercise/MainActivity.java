@@ -65,5 +65,8 @@ public class MainActivity extends Activity {
     public void Observer(View view){
         startActivity(new Intent(this, ObserverActivity.class));
     }
+    public void Mediator(View view){
+        startActivity(new Intent(this, MediatorActivity.class));
+    }
 
 }
