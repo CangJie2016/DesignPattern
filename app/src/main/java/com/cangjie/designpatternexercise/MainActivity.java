@@ -59,5 +59,8 @@ public class MainActivity extends Activity {
     public void Iterator(View view){
         startActivity(new Intent(this, IteratorActivity.class));
     }
+    public void Memento(View view){
+        startActivity(new Intent(this, MementoActivity.class));
+    }
 
 }

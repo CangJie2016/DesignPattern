@@ -91,6 +91,11 @@
                 android:layout_height="wrap_content"
                 android:text="Iterator"
                 android:onClick="Iterator"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Memento"
+                android:onClick="Memento"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
