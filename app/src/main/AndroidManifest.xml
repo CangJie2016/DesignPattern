@@ -33,10 +33,11 @@
         <activity android:name=".ChainOfResponsibilityActivity" />
         <activity android:name=".CommandActivity" />
         <activity android:name=".InterpreterActivity" />
-        <activity android:name=".MediatorActivity"></activity>
+        <activity android:name=".MediatorActivity" />
         <activity android:name=".IteratorActivity" />
         <activity android:name=".MementoActivity" />
-        <activity android:name=".ObserverActivity"></activity>
+        <activity android:name=".ObserverActivity" />
+        <activity android:name=".StateActivity"></activity>
     </application>
 
 </manifest>
