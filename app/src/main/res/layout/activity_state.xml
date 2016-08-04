@@ -12,12 +12,19 @@
         android:id="@+id/btn_level"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="level up"
-        android:onClick="upLevel"/>
+        android:text="click"
+        android:onClick="click"/>
     <Button
+        android:id="@+id/btn_timeOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_level"
-        android:text="play"
-        android:onClick="play"/>
+        android:text="timeOut"
+        android:onClick="timeOut"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_timeOut"
+        android:text="complete"
+        android:onClick="complete"/>
 </RelativeLayout>

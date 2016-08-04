@@ -4,22 +4,25 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.cangjie.designpatternexercise.state.CardPlayer;
+import com.cangjie.designpatternexercise.state.TransformGate;
 
 public class StateActivity extends AppCompatActivity {
 
-    private CardPlayer player;
+    private TransformGate gate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_state);
-        player = new CardPlayer("Tony");
+        gate = new TransformGate("Tony");
     }
-    public void upLevel(View view){
-        player.upLevel();
+    public void click(View view){
+        gate.click();
     }
-    public void play(View view){
-        player.play();
+    public void timeOut(View view){
+        gate.timeout();
+    }
+    public void complete(View view){
+        gate.complete();
     }
 }

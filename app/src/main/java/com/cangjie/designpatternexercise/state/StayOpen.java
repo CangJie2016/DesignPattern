@@ -3,12 +3,12 @@ package com.cangjie.designpatternexercise.state;
 import com.cangjie.designpatternexercise.utils.DebugLog;
 
 /**
- * author：CangJie on 2016/8/4 14:29
+ * author：CangJie on 2016/8/4 15:00
  * email：cangjie2016@gmail.com
  */
-public class SecondaryLevel extends Level {
+public class StayOpen extends State {
     @Override
-    public void play() {
-        DebugLog.w("积分加倍!!");
+    public void display() {
+        DebugLog.w("stayopen");
     }
 }
