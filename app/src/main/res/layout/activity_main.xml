@@ -111,6 +111,11 @@
                 android:layout_height="wrap_content"
                 android:text="State"
                 android:onClick="State"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitor"
+                android:onClick="Visitor"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

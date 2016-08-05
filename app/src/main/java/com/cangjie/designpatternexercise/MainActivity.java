@@ -70,6 +70,8 @@ public class MainActivity extends Activity {
     }
     public void State(View view){
         startActivity(new Intent(this, StateActivity.class));
+    }    public void Visitor(View view){
+        startActivity(new Intent(this, VisitorActivity.class));
     }
 
 }
